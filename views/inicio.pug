@@ -1,0 +1,34 @@
+extends ./layout/index
+//- en el blocque contenido agrega esto
+block slider
+    .slider 
+        h1 Rio de Janeiro
+        em aventura
+
+block contenido   
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eleifend lobortis dapibus. Integer eu lacus eget lacus hendrerit sodales. Duis lobortis rhoncus suscipit. Praesent sed molestie felis. Mauris tempus nisi quam, rhoncus vestibulum libero tincidunt vel. Donec nec augue tincidunt, 
+                p Mauris sed est ante. Donec consectetur magna nec facilisis accumsan. In vehicula dui eget ultrices ultrices. Maecenas nec tortor varius, feugiat lectus vel, faucibus arcu. Nullam tincidunt mi eget mauris mattis posuere.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros" class="img-fluid")
+
+        include ./layout/bloque_viajes
+
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canada
+                        p.fecha 20 de Marzo de 2022 - 28 de Marzo de 2022
+                        p.precio $2,500 USD
+    .container
+        h2.mt-5.text-center Testimoniales    
+        include ./layout/bloque_testimoniales                            
+            //- p= JSON.stringify(viajes)
+                //- h1= pagina
+                //- h1 #{pagina}

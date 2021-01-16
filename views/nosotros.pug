@@ -1,0 +1,51 @@
+extends ./layout/index
+//- en el blocque contenido agrega esto
+//- block contenido   
+
+
+//-  p= textoViajes
+
+//-  img(src="img/cupon.jpg")
+
+
+//- <h1>hola</h1>
+
+//- sintasis pug
+//- h1 hola
+//- p desde pug
+//- p= espera var de javascript que viene de index.js
+
+//- recuperar variable pasada
+//- p #{textoViajes}
+
+block contenido   
+    main.container.mt-5
+        .row
+            .col-md-5
+                img(src="img/nosotros.jpg", alt="" class="img-fluid")
+            .col-md-7
+                h1= pagina   
+                             
+                blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae erat a magna euismod ultrices at vitae eros. Sed tristique lacus felis, ac faucibus purus pulvinar quis. Praesent sagittis elit ante, sit amet faucibus quam tempus iaculis. Morbi consectetur, magna sed scelerisque vestibulum, est nisl tincidunt magna, non suscipit arcu nunc at felis. Pellentesque vulputate commodo dictum. Morbi varius.
+
+                p Fusce justo nisl, tincidunt sit amet ultricies vel, laoreet in elit. Suspendisse ac nulla vel odio tempor varius quis eget lorem. Duis mattis sagittis nunc id fringilla. Curabitur lacus purus, sodales sed justo vel, tempus posuere odio. Nam pretium velit non urna dictum viverra. Nulla ut laoreet ex, sit amet.
+
+                p Quisque ac tortor sed magna elementum faucibus. Integer efficitur massa ac ante viverra, a interdum diam mollis. Ut pulvinar vestibulum sem, sit amet tincidunt nunc dictum quis. ulis tortor hendrerit, varius mauris eget, lacinia ligula. Proin purus sem, imperdiet quis neque id, fermentum hendrerit nisi. Proin non dui nunc. Fusce 
+
+    .listado-iconos
+        .container.mt-5.py-5.text-center
+            .row
+              .col-md-4
+                img(src="img/icono_seguridad.svg", alt="icono seguridad", class="img-fluid mb-4")
+                h2.mb-4 Seguridad
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+            
+              .col-md-4
+                img(src="img/icono_destinos.svg", alt="icono seguridad", class="img-fluid mb-4")
+                h2.mb-4 Mejores Destinos
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+
+              .col-md-4
+                img(src="img/icono_precios.svg", alt="icono seguridad", class="img-fluid mb-4")
+                h2.mb-4 Los Mejores Precios
+                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
